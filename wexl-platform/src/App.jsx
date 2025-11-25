@@ -19,7 +19,7 @@ function App() {
 
   return (
     <Provider store={store}>
-      <Router basename="/Portfolio">
+      <Router>
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route index element={<Home />} />
