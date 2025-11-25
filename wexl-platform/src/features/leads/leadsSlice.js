@@ -10,36 +10,59 @@ export const submitLead = createAsyncThunk(
   'leads/submit',
   async (leadData, { rejectWithValue }) => {
     try {
-      const apiUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+      const apiUrl = import.meta.env.VITE_API_BASE_URL;
       
-      // Submit to backend API
-      const response = await fetch(`${apiUrl}/leads`, {
-        method: 'POST',
-        headers: { 
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(leadData),
-      });
-      
-      const result = await response.json();
-      
-      if (!response.ok) {
-        throw new Error(result.message || 'Failed to submit lead');
-      }
+      // If backend API is configured, submit to it
+      if (apiUrl && apiUrl.trim() !== '') {
+        try {
+          const response = await fetch(`${apiUrl}/leads`, {
+            method: 'POST',
+            headers: { 
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(leadData),
+          });
+          
+          const result = await response.json();
+          
+          if (!response.ok) {
+            throw new Error(result.message || 'Failed to submit lead');
+          }
 
-      // Send email via EmailJS (if configured)
-      let emailResult = { success: false };
-      if (isEmailConfigured()) {
-        emailResult = await sendLeadEmail(leadData);
-        console.log('EmailJS result:', emailResult);
-      } else {
-        console.log('⚠️ EmailJS not configured - skipping frontend email');
+          // Send email via EmailJS (if configured)
+          let emailResult = { success: false };
+          if (isEmailConfigured()) {
+            emailResult = await sendLeadEmail(leadData);
+            console.log('EmailJS result:', emailResult);
+          }
+          
+          return {
+            ...result.data,
+            emailSentViaEmailJS: emailResult.success,
+          };
+        } catch (backendError) {
+          console.warn('Backend API unavailable, falling back to EmailJS only:', backendError.message);
+        }
       }
       
-      return {
-        ...result.data,
-        emailSentViaEmailJS: emailResult.success,
-      };
+      // Fallback: Use EmailJS only (for production without backend)
+      if (isEmailConfigured()) {
+        const emailResult = await sendLeadEmail(leadData);
+        
+        if (!emailResult.success) {
+          throw new Error('Failed to send email. Please try again or contact us directly.');
+        }
+        
+        return {
+          leadId: `LEAD-${Date.now()}`,
+          submittedAt: new Date().toISOString(),
+          emailSent: true,
+          emailSentViaEmailJS: true,
+          message: 'Lead submitted successfully via email!'
+        };
+      } else {
+        throw new Error('Email service not configured. Please contact us directly.');
+      }
     } catch (error) {
       return rejectWithValue(error.message);
     }
