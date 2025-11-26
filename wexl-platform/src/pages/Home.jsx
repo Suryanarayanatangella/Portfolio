@@ -73,7 +73,7 @@ const HomeNew = () => {
                 </Button>
               </Link>
               <Link to="/services">
-                <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-primary transition-all duration-300">
+                <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300">
                   View Services
                 </Button>
               </Link>

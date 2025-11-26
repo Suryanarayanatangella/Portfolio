@@ -32,7 +32,7 @@ const Button = ({
     md: 'px-6 py-3 text-base',
     lg: 'px-8 py-4 text-lg',
   };
-
+const hoverColor = 'text-black'
   const disabledStyles = 'opacity-50 cursor-not-allowed hover:scale-100';
 
   return (
@@ -42,7 +42,7 @@ const Button = ({
       disabled={disabled}
       className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${
         disabled ? disabledStyles : ''
-      } ${className}`}
+      } ${className} ${variants[variant]===variants['outline']?'text-black':''}}`}
       {...props}
     >
       {/* Ripple Effect */}

@@ -337,7 +337,7 @@ const Services = () => {
               </Button>
             </Link>
             <a href={`https://wa.me/${siteConfig.contact.whatsapp.replace(/[^0-9]/g, '')}`} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black">
                 💬 WhatsApp Me
               </Button>
             </a>
