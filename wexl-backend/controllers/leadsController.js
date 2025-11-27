@@ -10,6 +10,7 @@ const {
  * POST /api/leads
  */
 const submitLead = async (req, res) => {
+  debugger
   try {
     const leadData = req.body;
 

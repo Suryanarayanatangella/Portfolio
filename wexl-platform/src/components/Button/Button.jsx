@@ -21,10 +21,10 @@ const Button = ({
   const baseStyles = 'font-semibold rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 relative overflow-hidden group';
 
   const variants = {
-    primary: 'bg-accent text-primary hover:bg-yellow-400 focus:ring-accent shadow-lg hover:shadow-xl hover:scale-105',
-    secondary: 'bg-primary text-white hover:bg-[#0d2f43] focus:ring-primary shadow-lg hover:shadow-xl hover:scale-105',
-    outline: 'border-2 border-primary text-primary hover:bg-primary hover:text-white focus:ring-primary hover:scale-105',
-    ghost: 'text-primary hover:bg-gray-100 focus:ring-gray-300',
+    primary: 'bg-[#f6b519] dark:bg-[#ffc940] text-[#113e59] dark:text-gray-900 hover:bg-yellow-400 dark:hover:bg-yellow-500 focus:ring-[#f6b519] dark:focus:ring-[#ffc940] shadow-lg hover:shadow-xl hover:scale-105',
+    secondary: 'bg-[#113e59] dark:bg-[#1a5a7f] text-white hover:bg-[#0d2f43] dark:hover:bg-[#113e59] focus:ring-[#113e59] dark:focus:ring-[#1a5a7f] shadow-lg hover:shadow-xl hover:scale-105',
+    outline: 'border-2 border-[#113e59] dark:border-[#1a5a7f] text-[#113e59] dark:text-[#1a5a7f] hover:bg-[#113e59] dark:hover:bg-[#1a5a7f] hover:text-white focus:ring-[#113e59] dark:focus:ring-[#1a5a7f] hover:scale-105',
+    ghost: 'text-[#113e59] dark:text-[#1a5a7f] hover:bg-gray-100 dark:hover:bg-gray-800 focus:ring-gray-300 dark:focus:ring-gray-600',
   };
 
   const sizes = {
