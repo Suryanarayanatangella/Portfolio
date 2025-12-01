@@ -61,7 +61,9 @@ html {
 button:hover span {
     color: #1f3f48;
 }
-
+button.hover\:text-white:hover span {
+    color: #fff;
+}
 /* Custom Animations */
 @keyframes fadeIn {
   from {

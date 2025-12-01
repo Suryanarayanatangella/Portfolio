@@ -259,7 +259,7 @@ const HomeNew = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="font-dm-sans text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="font-dm-sans text-3xl md:text-4xl font-bold mb-4 text-accent">
               Modern Technologies
             </h2>
             <p className="font-source-sans text-xl text-gray-200 max-w-3xl mx-auto">
