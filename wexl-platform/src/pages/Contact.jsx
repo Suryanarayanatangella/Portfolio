@@ -7,7 +7,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary to-[#0d2f43] text-white py-20">
         <div className="container mx-auto px-4">
-          <h1 className="font-dm-sans text-4xl md:text-5xl font-bold mb-6 text-center">
+          <h1 className="font-dm-sans text-4xl md:text-5xl font-bold mb-6 text-center text-accent">
             Contact Us
           </h1>
           <p className="font-source-sans text-xl text-center max-w-3xl mx-auto text-gray-200">

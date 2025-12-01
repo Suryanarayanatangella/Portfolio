@@ -44,7 +44,7 @@ const HomeNew = () => {
             </motion.div>
             
             <motion.h1 
-              className="font-dm-sans text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+              className="text-accent font-dm-sans text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
               variants={fadeInUp}
             >
               <span className="text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">Transform Your Business with</span>

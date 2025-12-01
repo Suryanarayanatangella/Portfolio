@@ -29,7 +29,7 @@ const Services = () => {
         >
           <motion.div className="max-w-4xl mx-auto text-center" variants={fadeInUp}>
             <motion.h1 
-              className="text-5xl md:text-6xl font-bold mb-6"
+              className="text-5xl md:text-6xl font-bold mb-6 text-accent"
               variants={fadeInUp}
             >
               Services & Pricing

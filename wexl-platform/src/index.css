@@ -55,6 +55,10 @@ img {
 html {
   scroll-behavior: smooth;
 }
+.text-primary {color: #f6b519;}
+button:hover span {
+    color: #1f3f48;
+}
 
 /* Custom Animations */
 @keyframes fadeIn {
