@@ -46,10 +46,9 @@ const HomeNew = () => {
             <motion.h1 
               className="font-dm-sans text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
               variants={fadeInUp}
-              style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}
             >
-              <span className="text-white">Transform Your Business with</span>
-              <span className="block mt-2 bg-gradient-to-r from-accent to-yellow-300 bg-clip-text text-transparent">
+              <span className="text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">Transform Your Business with</span>
+              <span className="block mt-2 text-accent drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
                 Professional Web Solutions
               </span>
             </motion.h1>

@@ -19,17 +19,17 @@ const Portfolio = () => {
       description: "Developed 250+ frontend pages for Federal Bank, one of India's leading private sector banks. Large-scale enterprise project serving millions of customers with secure, responsive, and accessible web interfaces.",
       screenshots: [
         {
-          url: "/portfolio/federal-bank/homepge.png",
+          url: `${import.meta.env.BASE_URL}portfolio/federal-bank/homepge.png`,
           title: "Business Loans",
           description: "Business banking solutions and loan products"
         },
         {
-          url: "/portfolio/federal-bank/product-page.png",
+          url: `${import.meta.env.BASE_URL}portfolio/federal-bank/product-page.png`,
           title: "Personal Banking",
           description: "Personal banking services and features"
         },
         {
-          url: "/portfolio/federal-bank/businessloan-product.png",
+          url: `${import.meta.env.BASE_URL}portfolio/federal-bank/businessloan-product.png`,
           title: "Digital Banking",
           description: "FedPoint digital banking platform"
         }
@@ -52,22 +52,22 @@ const Portfolio = () => {
       description: "Developed 170+ pages for ICICI Bank's retirement planning platform. Built 120+ theme-based dashboard static pages and 50+ Angular-based UI pages for comprehensive retirement journey management system.",
       screenshots: [
         {
-          url: "/portfolio/icici-bank/retirement-journey.png",
+          url: `${import.meta.env.BASE_URL}portfolio/icici-bank/retirement-journey.png`,
           title: "Retirement Dashboard",
           description: "Theme-based retirement planning dashboard"
         },
         {
-          url: "/portfolio/icici-bank/icici-investments.png",
+          url: `${import.meta.env.BASE_URL}portfolio/icici-bank/icici-investments.png`,
           title: "ICICI Investments",
           description: "Interactive retirement planning dashboards"
         },
         {
-          url: "/portfolio/icici-bank/personal-investment.png",
+          url: `${import.meta.env.BASE_URL}portfolio/icici-bank/personal-investment.png`,
           title: "Personal Investment",
           description: "Angular-based portfolio tracking interface"
         },
         {
-          url: "/portfolio/icici-bank/income.png",
+          url: `${import.meta.env.BASE_URL}portfolio/icici-bank/income.png`,
           title: "Income Page",
           description: "Angular-based portfolio tracking interface"
         }
@@ -90,17 +90,17 @@ const Portfolio = () => {
       description: "Complete UI development for WEXL educational technology platform and BET Apps (sister concern). Built entire application interface from scratch including website, platform dashboard, and all user-facing components with modern Angular architecture and Material UI design system.",
       screenshots: [
         {
-          url: "/portfolio/wexl-betapps/dashboard.png",
+          url: `${import.meta.env.BASE_URL}portfolio/wexl-betapps/dashboard.png`,
           title: "WEXL Homepage",
           description: "Modern educational platform landing page"
         },
         {
-          url: "/portfolio/wexl-betapps/about-wexl.png",
+          url: `${import.meta.env.BASE_URL}portfolio/wexl-betapps/about-wexl.png`,
           title: "About WEXL",
           description: "Interactive learning management dashboard"
         },
         {
-          url: "/portfolio/wexl-betapps/bet-apps.png",
+          url: `${import.meta.env.BASE_URL}portfolio/wexl-betapps/bet-apps.png`,
           title: "BET Apps Platform",
           description: "Sister concern enterprise application"
         }
