@@ -55,7 +55,9 @@ img {
 html {
   scroll-behavior: smooth;
 }
-.text-primary {color: #f6b519;}
+.text-new-transparent {
+    color: #fbd16d59;
+}
 button:hover span {
     color: #1f3f48;
 }

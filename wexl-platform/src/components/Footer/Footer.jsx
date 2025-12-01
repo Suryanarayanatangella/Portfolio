@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="font-dm-sans text-xl font-bold mb-4">UiTECH</h3>
+            <h3 className="font-dm-sans text-2xl md:text-3xl font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300 text-new-transparent">UiTECH</h3>
             <p className="font-source-sans text-gray-300 mb-4">
               Professional React web development services for small and medium businesses. Modern, responsive websites delivered fast.
             </p>
@@ -19,7 +19,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-dm-sans text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-dm-sans text-lg font-semibold mb-4 text-accent">Quick Links</h4>
             <ul className="space-y-2">
               <li>
                 <Link to="/about" className="text-gray-300 hover:text-accent transition-colors">
@@ -46,7 +46,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-dm-sans text-lg font-semibold mb-4">Services</h4>
+            <h4 className="font-dm-sans text-lg font-semibold mb-4 text-accent">Services</h4>
             <ul className="space-y-2">
               <li>
                 <Link to="/services" className="text-gray-300 hover:text-accent transition-colors">
@@ -73,7 +73,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-dm-sans text-lg font-semibold mb-4">Contact Us</h4>
+            <h4 className="font-dm-sans text-lg font-semibold mb-4 text-accent">Contact Us</h4>
             <ul className="space-y-2 text-gray-300">
               <li className="flex items-start">
                 <svg className="w-5 h-5 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
